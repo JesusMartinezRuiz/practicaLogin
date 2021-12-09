@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+
+    <RelativeLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="#C4EFF4"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/item_miniautura"
+            android:layout_width="135dp"
+            android:layout_height="133dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="260dp"
+            android:src="@drawable/ic_androide" />
+
+        <TextView
+            android:id="@+id/item_nombre"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView8"
+            android:layout_alignStart="@+id/textView8"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="10dp"
+            android:text="Nombre"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_autor"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_nombre"
+            android:layout_alignParentStart="true"
+
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="70dp"
+            android:text="Autor"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_personas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/item_editar"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="140dp"
+            android:layout_marginBottom="1dp"
+            android:text="10"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/item_borrar"
+            android:layout_width="50dp"
+            android:layout_height="41dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="21dp"
+            app:srcCompat="@drawable/ic_baseline_delete_forever_24" />
+
+        <ImageView
+            android:id="@+id/item_editar"
+            android:layout_width="58dp"
+            android:layout_height="41dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="73dp"
+            android:layout_marginEnd="17dp"
+            app:srcCompat="@drawable/ic_baseline_edit_24" />
+
+        <RatingBar
+
+            android:id="@+id/item_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="21dp"
+            android:clickable="false"
+            android:saveEnabled="false" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="134dp"
+            android:text="Autor:" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_nombre"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="156dp"
+            android:text="Comensales:" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="124dp"
+            android:text="Nombre del Plato:" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
